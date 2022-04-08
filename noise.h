@@ -1,3 +1,7 @@
+/*
+This entire conversion project thing is HEAVILY based on the implementation at https://gist.github.com/nowl/828013 by Nowl
+Conversion to using fixed integers intended for GBDK by Plokie
+*/
 #include <gb/gb.h>
 
 /*
