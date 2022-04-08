@@ -44,6 +44,8 @@ uint_fast8_t noise2(uint8_t x, uint8_t y)
     uint_fast8_t tmp = hash[(y + noise_seed) % 256];
     return hash[(tmp + x) % 256];
 }
+
+//In most cases, this is the function you wanna use vvvv
 /*
     Takes x and y unsigned integers as inputs and return a noise value from 0 to 255
     X and Y are 16 bit unsigned integers and so are in the range 0-65536
@@ -67,7 +69,7 @@ uint_fast8_t noise2d(uint16_t x, uint16_t y)
     return fixed_lerp(low, high, y_dec);
 }
 /*
-To be honest the is kind of experimental and im not sure if it works or not, its just sort of here if you
+To be honest this is kind of experimental and im not sure if it works or not, its just sort of here if you
 want to try to use it in whatever you may want to use it for. Can't promise it works though. Sorry!
 */
 uint_fast8_t fbm(uint16_t x, uint16_t y, uint8_t freq, uint8_t depth)
