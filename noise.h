@@ -88,3 +88,5 @@ uint_fast8_t fbm(uint16_t x, uint16_t y, uint8_t freq, uint8_t depth)
 
     return fixed_integer_part(fin) / fixed_integer_part(div);
 }
+
+//<3
