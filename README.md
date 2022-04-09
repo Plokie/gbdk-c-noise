@@ -9,11 +9,14 @@ For information on how it works, see the header file comments
 Example usage:
 
 ```c++
+//Loop through each x and y coordinate to-be generated
 for(uint_fast8_t x=0; x<targetMap_Width; x++) {
     for(uint_fast8_t y=0; y<targetMap_Height; y++) {
-        uint_fast8_t val = noise2d(x*45,y*45);
-        if(val<128) set_element(x,y,water);
-        else set_element(x,y,grass);
+    
+        uint_fast8_t val = noise2d(x*45,y*45); //Sample simplex noise
+        
+        if(val<128) set_element(x,y,water); //Below ocean level
+        else set_element(x,y,grass); //Above ocean level = land (grass)
     }
 }
 ```
