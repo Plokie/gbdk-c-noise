@@ -6,4 +6,16 @@ Based on the C fbm header by nowl at https://gist.github.com/nowl/828013 and mod
 
 For information on how it works, see the header file comments
 
+Example usage:
+
+```c++
+for(uint_fast8_t x=0; x<targetMap_Width; x++) {
+    for(uint_fast8_t y=0; y<targetMap_Height; y++) {
+        uint_fast8_t val = noise2d(x*45,y*45);
+        if(val<128) set_element(x,y,water);
+        else set_element(x,y,grass);
+    }
+}
+```
+
 <3
