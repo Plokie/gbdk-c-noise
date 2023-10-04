@@ -21,4 +21,7 @@ for(uint_fast8_t x=0; x<targetMap_Width; x++) {
 }
 ```
 
+Demonstration
+
+![Screenshot of a GameBoy game, demonstrating the usage of the noise](https://plokie.com/other/gb.png)
 <3
